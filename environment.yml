@@ -5,21 +5,23 @@ dependencies:
   - python=3.10
   # - pip
   - terraform
+  # - pip:
+  # - --extra-index-url https://pypi.nvidia.com
+  - ipykernel
+  - pandas
+  - scikit-learn
+  - seaborn
+  - uvicorn[standard]
+  - tensorflow[and-cuda]==2.15.0
+  - tf2onnx==1.15.1
+  - dagshub
+  - mlflow
+  - boto3
+  - pytest
+  - ruff
+  - mypy
+  - pre-commit
   - pip:
     - --extra-index-url https://pypi.nvidia.com
-    - ipykernel
-    - pandas
-    - scikit-learn
-    - seaborn
-    - uvicorn[standard]
-    - tensorflow[and-cuda]==2.15.0
-    - tf2onnx==1.15.1
-    - dagshub
-    - mlflow
-    - boto3
-    - pytest
-    - ruff
-    - mypy
-    - pre-commit
     - -r layers/api/requirements.txt
     - -r layers/core/requirements.txt
